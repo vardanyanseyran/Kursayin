@@ -40,7 +40,6 @@ public class CamelliaEncryption {
 
     private static byte[] generateIV() {
         byte[] iv = new byte[IV_SIZE];
-        // use a secure random number generator to generate the IV
         SecureRandom random = new SecureRandom();
         random.nextBytes(iv);
         return iv;
